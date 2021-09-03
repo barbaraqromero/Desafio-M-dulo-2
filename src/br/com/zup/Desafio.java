@@ -97,7 +97,7 @@ public class Desafio {
         //Sinalizando sobre opção inválida
 
         default:
-          System.out.println("Opção inválido!");
+          System.out.println("Opção inválida!");
       }
 
     }
