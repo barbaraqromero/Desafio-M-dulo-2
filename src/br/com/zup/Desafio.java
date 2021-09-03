@@ -27,7 +27,7 @@ public class Desafio {
 
     //Criando menu e inserindo mais funcionários
 
-    do {
+    while (voltarAoMenu == 0) {
       System.out.println("\nMENU - Considere as opções a seguir:");
       System.out.println("1 - Inserir novo funcionário;");
       System.out.println("2 - Exibir lista completa de funcionários cadastrados;");
@@ -65,17 +65,18 @@ public class Desafio {
 
         case 3:
           System.out.println("O programa foi encerrado!");
-          System.out.println("\nDESEJA RETORNAR?");
+          //System.out.println("\nDESEJA RETORNAR?");
+          voltarAoMenu = -1;
           break;
 
         default:
           System.out.println("Número inválido!");
       }
 
-    } while (voltarAoMenu == 0);
 
-
+    }
   }
 }
+
 
 
