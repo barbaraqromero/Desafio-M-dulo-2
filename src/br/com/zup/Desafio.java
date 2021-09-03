@@ -75,6 +75,12 @@ public class Desafio {
           break;
 
         case 3:
+          System.out.println("Por favor, insira o número CPF que deseja excluir: ");
+          cpfDoFuncionario = leitor.nextLine();
+          funcionarios.remove(cpfDoFuncionario);
+          System.out.println("Funcionário excluído!");
+          voltarAoMenu = leitor.nextInt();
+          break;
 
         case 4:
           System.out.println("O programa foi encerrado!");
