@@ -28,14 +28,12 @@ public class Desafio {
     //Criando menu e inserindo mais funcionários
 
     do {
-      System.out.println(""); //pulando uma linha
-      System.out.println("MENU - Considere as opções a seguir:");
+      System.out.println("\nMENU - Considere as opções a seguir:");
       System.out.println("1 - Inserir novo funcionário;");
       System.out.println("2 - Exibir lista completa de funcionários cadastrados;");
       System.out.println("3 - Encerrar programa.");
       System.out.println("0 - Voltar ao menu principal");
-      System.out.println(""); //pulando uma linha
-      System.out.println("Por favor, digite a opção desejada: ");
+      System.out.println("\nPor favor, digite a opção desejada: ");
       opcaoEscolhida = leitor.nextInt();
 
       leitor.nextLine();
@@ -65,8 +63,7 @@ public class Desafio {
 
         case 3:
           System.out.println("O programa foi encerrado!");
-          System.out.println(""); //pulando uma linha
-          System.out.println("DESEJA RETORNAR?");
+          System.out.println("\nDESEJA RETORNAR?");
       }
 
     } while (voltarAoMenu == 0);
