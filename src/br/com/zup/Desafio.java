@@ -65,6 +65,8 @@ public class Desafio {
           voltarAoMenu = leitor.nextInt();
           break;
 
+        //Exibindo funcionários cadastrados
+
         case 2:
           for (String chaveCPF : funcionarios.keySet()) {
             System.out.println(funcionarios.get(chaveCPF) + chaveCPF);
@@ -74,21 +76,28 @@ public class Desafio {
           voltarAoMenu = leitor.nextInt();
           break;
 
+        //Excluindo um funcionário
+
         case 3:
           System.out.println("Por favor, insira o número CPF que deseja excluir: ");
           cpfDoFuncionario = leitor.nextLine();
           funcionarios.remove(cpfDoFuncionario);
           System.out.println("Funcionário excluído!");
+          System.out.println("\nPara voltar ao menu, digite 0");
           voltarAoMenu = leitor.nextInt();
           break;
+
+        //Encerrando o programa
 
         case 4:
           System.out.println("O programa foi encerrado!");
           voltarAoMenu = -1;
           break;
 
+        //Sinalizando sobre opção inválida
+
         default:
-          System.out.println("Número inválido!");
+          System.out.println("Opção inválido!");
       }
 
     }
