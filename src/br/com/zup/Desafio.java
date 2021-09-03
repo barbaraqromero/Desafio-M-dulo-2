@@ -59,11 +59,17 @@ public class Desafio {
             System.out.println(funcionarios.get(chaveCPF) + chaveCPF);
           }
           System.out.println(funcionarios);
+          System.out.println("\nPara voltar ao menu, digite 0");
+          voltarAoMenu = leitor.nextInt();
           break;
 
         case 3:
           System.out.println("O programa foi encerrado!");
           System.out.println("\nDESEJA RETORNAR?");
+          break;
+
+        default:
+          System.out.println("Número inválido!");
       }
 
     } while (voltarAoMenu == 0);
